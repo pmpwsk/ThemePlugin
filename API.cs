@@ -57,6 +57,22 @@ public partial class ThemePlugin : Plugin
                     ]);
                 }
                 break;
+            case "/set":
+                {
+                    if (!req.LoggedIn)
+                    {
+                        req.Status = 403;
+                        return;
+                    }
+                    if (!(req.Query.TryGetValue("colors", out var colors)) || !Themes.Contains(colors))
+                    {
+                        req.Status = 400;
+                        return;
+                    }
+
+                    req.User.Settings["Theme"] = colors;
+                }
+                break;
             default:
                 req.Status = 404;
                 break;
