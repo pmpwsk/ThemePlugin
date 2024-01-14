@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('[PATH_PREFIX]/fonts/ubuntu.woff2') format('woff2'), url('[PATH_PREFIX]/fonts/ubuntu.woff') format('woff'), url('[PATH_PREFIX]/fonts/ubuntu.ttf') format('truetype'), url('[PATH_PREFIX]/fonts/ubuntu.otf') format('otf'), url('[PATH_PREFIX]/fonts/ubuntu.eot') format('embedded-opentype'), url('[PATH_PREFIX]/fonts/ubuntu.svg') format('svg');
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: 'ubuntu-mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('[PATH_PREFIX]/fonts/ubuntu-mono.woff2') format('woff2'), url('[PATH_PREFIX]/fonts/ubuntu-mono.woff') format('woff'), url('[PATH_PREFIX]/fonts/ubuntu-mono.ttf') format('truetype'), url('[PATH_PREFIX]/fonts/ubuntu-mono.otf') format('otf'), url('[PATH_PREFIX]/fonts/ubuntu-mono.eot') format('embedded-opentype'), url('[PATH_PREFIX]/fonts/ubuntu-mono.svg') format('svg');
+    unicode-range: U+000-5FF;
+}
+
+:root {
+    --font-family: 'ubuntu';
+    --font-code: 'ubuntu-mono';
+    --background: #cccccc;
+    --foreground: #000000;
+    --theme: #1a4091;
+    --navbg: #cccccc66;
+    --shadow: #777777;
+}
